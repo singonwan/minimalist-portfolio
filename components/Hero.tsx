@@ -32,7 +32,7 @@ const Hero = () => {
             words="Transforming Concepts into Seamless User Experiences"
           />
           <p className="mb-4 text-center text-sm md:text-lg md:tracking-wider lg:text-2xl">
-            Hi, I&apos;m George, a Software Developer based in Canada.
+            Hi, I&apos;m George, a Software Developer based in Toronto, Canada.
           </p>
           <a href="/about">
             <MagicButton
