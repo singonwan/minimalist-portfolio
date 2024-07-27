@@ -116,23 +116,23 @@ export const BentoGridItem = ({
 
           {id === 3 && (
             <div className="absolute -right-3 flex w-fit gap-1 lg:-right-2 lg:gap-5">
-              <div className="flex flex-col gap-3 lg:gap-8">
+              <div className="flex flex-col gap-3 lg:gap-6">
                 {["React.js", "Next.js", "TypeScript"].map((item) => (
                   <span
                     key={item}
-                    className="rounded-lg bg-[#10132E] px-3 py-2 text-center text-xs opacity-50 lg:px-3 lg:py-4 lg:text-base lg:opacity-100"
+                    className="rounded-lg bg-[#10132E] px-3 py-2 text-center text-xs opacity-100 lg:px-3 lg:py-2 lg:text-base"
                   >
                     {item}
                   </span>
                 ))}
                 <span className="rounded-lg bg-[#10132E] px-3 py-4 text-center" />
               </div>
-              <div className="flex flex-col gap-3 lg:gap-8">
+              <div className="flex flex-col gap-3 md:gap-3 lg:gap-6">
                 <span className="rounded-lg bg-[#10132E] px-3 py-4 text-center" />
                 {["HTML", "Python", "MongoDB"].map((item) => (
                   <span
                     key={item}
-                    className="rounded-lg bg-[#10132E] px-3 py-2 text-center text-xs opacity-50 lg:px-3 lg:py-4 lg:text-base lg:opacity-100"
+                    className="rounded-lg bg-[#10132E] px-3 py-2 text-center text-xs opacity-100 lg:px-3 lg:py-2 lg:text-base"
                   >
                     {item}
                   </span>
