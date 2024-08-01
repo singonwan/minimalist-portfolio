@@ -1,6 +1,7 @@
 import { projects } from "@/data";
 import React from "react";
 import { PinContainer } from "./ui/3d-pin";
+import { FaLocationArrow } from "react-icons/fa6";
 
 const RecentProjects = () => {
   return (
@@ -15,7 +16,7 @@ const RecentProjects = () => {
             key={id}
             className="flex h-[25rem] w-[80vw] items-center justify-center sm:w-96 lg:min-h-[32.5rem]"
           >
-            <PinContainer title={title} href={link}>
+            <PinContainer title={link} href={link}>
               <div className="relative mb-10 flex h-[20vh] w-[80vw] items-center justify-center overflow-hidden sm:w-96 lg:h-[30vh]">
                 <div className="relative h-full w-full overflow-hidden bg-[#13162d] lg:rounded-3xl">
                   <img src="/bg.png" alt="bg-img" />
@@ -28,6 +29,25 @@ const RecentProjects = () => {
               <p className="line-clamp-2 text-sm font-light lg:text-xl lg:font-normal">
                 {des}
               </p>
+              <div className="mb-3 mt-7 flex items-center justify-between">
+                <div className="flex items-center">
+                  {iconLists.map((icon, index) => (
+                    <div
+                      key={icon}
+                      className="flex h-8 w-8 items-center justify-center rounded-full border border-white/[0.2] bg-black lg:h-10 lg:w-10"
+                      style={{ transform: `translateX(-${5 * index * 2}px)` }}
+                    >
+                      <img src={icon} alt={icon} className="p-2" />
+                    </div>
+                  ))}
+                </div>
+                <div className="flex items-center justify-center">
+                  <p className="flex text-sm text-purple md:text-xs lg:text-xl">
+                    Check Live Site
+                  </p>
+                  <FaLocationArrow className="ms-3" color="#CBACF9" />
+                </div>
+              </div>
             </PinContainer>
           </div>
         ))}
