@@ -6,13 +6,6 @@ import { socialMedia } from "@/data";
 const Footer = () => {
   return (
     <footer className="w-full pb-10 pt-20" id="contact">
-      <div className="absolute -bottom-72 left-0 min-h-96 w-full">
-        <img
-          src="/footer-grid.svg"
-          alt="grid"
-          className="h-full w-full opacity-50"
-        />
-      </div>
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
           Ready to take <span className="text-purple">your</span> digital
