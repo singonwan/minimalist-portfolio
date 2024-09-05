@@ -1,3 +1,4 @@
+// "use client";
 import { projects } from "@/data";
 import React from "react";
 import { PinContainer } from "./ui/3d-pin";
@@ -21,7 +22,11 @@ const RecentProjects = () => {
                 <div className="relative h-full w-full overflow-hidden bg-[#13162d] lg:rounded-3xl">
                   <img src="/bg.png" alt="bg-img" />
                 </div>
-                <img src={img} alt={title} className="absolute bottom-0 z-10" />
+                <img
+                  src={img}
+                  alt={title}
+                  className="absolute bottom-0 z-10 rounded-lg"
+                />
               </div>
               <h1 className="line-clamp-1 text-base font-bold md:text-xl lg:text-2xl">
                 {title}
@@ -43,7 +48,7 @@ const RecentProjects = () => {
                 </div>
                 <div className="flex items-center justify-center">
                   <p className="flex text-sm text-purple md:text-xs lg:text-xl">
-                    Check Live Site
+                    Check Github
                   </p>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>
