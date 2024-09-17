@@ -3,6 +3,7 @@ import { projects } from "@/data";
 import React from "react";
 import { PinContainer } from "./ui/3d-pin";
 import { FaLocationArrow } from "react-icons/fa6";
+import Image from "next/image";
 
 const RecentProjects = () => {
   return (
@@ -22,7 +23,9 @@ const RecentProjects = () => {
                 <div className="relative h-full w-full overflow-hidden bg-[#13162d] lg:rounded-3xl">
                   <img src="/bg.png" alt="bg-img" />
                 </div>
-                <img
+                <Image
+                  width={500}
+                  height={500}
                   src={img}
                   alt={title}
                   className="absolute bottom-0 z-10 rounded-lg"
